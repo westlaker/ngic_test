@@ -1,3 +1,14 @@
+ARM64
+=====
+install docker >sudo apt-get install docker.io
+install docker server version 13.1
+Highest version of docker-compose supported is 3.1
+docker-compose on github has no arm64 binaries
+clone and build https://github.com/docker/compose.git
+
+
+
+
 Prerequisites
 =============
 

@@ -1,14 +1,18 @@
+ARM64 ONLY 
+==========
+
 Steps to build from source (rather than using pre-built docker images):
 
-Starting in the `cordbuild2017` directory, run the following command to clone the NGIC code at a specific commit and also pull the required DPDK submodule:
+Starting in the `ngic_test` directory, run the following command to clone the NGIC code at a specific commit and also pull the required DPDK submodule:
 
 `git submodule update --init --recursive`
 
 Copy the Dockerfiles from demo repo to ngic directory:
 
-`cp dockerfiles/Docker* ngic/`
+`cp dockerfiles/Docker* ngic_arm64/`
 
 To move away from hardcoded IP address configs and test DNS apply the below patch
+Patch has been applied to ngic_arm64, use -DNGIC_TEST CFLAGS switch to enable
 
 ```shell
 cp dockerfiles/use_dns.patch ngic/
@@ -17,7 +21,7 @@ git -C ngic apply use_dns.patch
 
 Also for this demo, we are disabling the SDN Controller support.
 
-`sed -i 's/CFLAGS/#CFLAGS/g' ngic/config/ng-core_cfg.mk`
+`sed -i 's/CFLAGS/#CFLAGS/g' ngic_arm64/config/ng-core_cfg.mk`
 
 Now you can use the docker-compose to build the container images:
 
