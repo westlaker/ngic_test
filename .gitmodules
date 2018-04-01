@@ -2,3 +2,7 @@
 	path = ngic
 	url = https://gerrit.opencord.org/ngic
 	ignore = dirty
+[submodule "ngic_arm64"]
+	path = ngic_arm64
+	url = https://github.com/adivjoseph/ngic_arm64.git
+	branch = master
