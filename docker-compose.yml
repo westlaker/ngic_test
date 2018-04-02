@@ -1,14 +1,14 @@
-version: '3.2'
+version: '3.0'
 services:
   builder:
     build:
-      context: ngic
+      context: ngic_arm64
       dockerfile: Dockerfile-builder
     image: ngiccorddemo/ngic-builder:$tag
 
   cp:
     build:
-      context: ngic
+      context: ngic_arm64
       dockerfile: Dockerfile-cp
       args:
       - tag=$tag
@@ -28,7 +28,7 @@ services:
 
   dp:
     build:
-      context: ngic
+      context: ngic_arm64
       dockerfile: Dockerfile-dp
       args:
       - tag=$tag

@@ -1,19 +1,23 @@
-ARG tag=latest
-FROM ngiccorddemo/ngic-builder:${tag} as dp-builder
+#ARG tag=latest
+FROM ngiccorddemo/ngic-builder:latest 
 
 ENV NG_CORE /opt/ng-core
 COPY . ${NG_CORE}
 WORKDIR ${NG_CORE}
 
+RUN apt-get update && apt-get -y  install libssl-dev
+
 RUN make clean && make -j4 build-lib && \
     make -j4 build-dp EXTRA_CFLAGS="-DSTATS -DOSTATS"
 
-FROM ubuntu:16.04
+#FROM ubuntu:16.04
 RUN apt-get update && apt-get -y install \
     libzmq5 libstdc++6 libgcc1 \
     iputils-ping iproute2
 RUN apt-get -y install tcpdump net-tools traceroute mtr dnsutils bind9-host hostname ethtool netcat
-COPY --from=dp-builder /opt/ng-core/dp/build/ngic_dataplane /opt/ngic/bin/ngic_dataplane
+RUN mkdir /opt/ngic
+RUN mkdir /opt/ngic/bin
+RUN cp /opt/ng-core/dp/build/ngic_dataplane /opt/ngic/bin/ngic_dataplane
 
 # 20 CP/DP Comm
 EXPOSE 20/UDP
