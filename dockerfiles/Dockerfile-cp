@@ -6,12 +6,7 @@ WORKDIR ${NG_CORE}
 
 RUN make clean && make -j4 build-cp
 
-#FROM ubuntu:16.04
-RUN apt-get update && apt-get -y install \
-    libpcap0.8-dev libcurl4-openssl-dev \
-    libjson0-dev \
-    iputils-ping iproute2
-RUN apt-get -y install tcpdump net-tools traceroute mtr dnsutils bind9-host hostname ethtool netcat
+
 #RUN ls cp/build/  -la
 RUN mkdir /opt/ngic
 RUN mkdir /opt/ngic/bin
