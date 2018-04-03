@@ -1,4 +1,4 @@
-FROM ubuntu:16.04 as ngic-builder
+FROM ubuntu:16.04 
 
 RUN apt-get update && apt-get -y install build-essential wget \
     libboost-all-dev cmake ragel \
