@@ -5,6 +5,11 @@ ENV NG_CORE /opt/ng-core
 COPY . ${NG_CORE}
 WORKDIR ${NG_CORE}
 
+RUN apt-get update && apt-get -y install  libssl-dev
+
+RUN make clean && make -j4 build-lib && \
+    make -j4 build-dp EXTRA_CFLAGS="-DSTATS -DOSTATS"
+
 
 RUN mkdir /opt/ngic
 RUN mkdir /opt/ngic/bin

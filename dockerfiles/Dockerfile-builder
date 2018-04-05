@@ -3,16 +3,15 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get -y install build-essential wget \
     libboost-all-dev cmake ragel \
     libzmq3-dev libcurl4-openssl-dev  \
-    libpcap0.8-dev libjson0-dev
+    libpcap0.8-dev libjson0-dev git
 
 
-RUN apt-get -y install    libpcap0.8-dev libcurl4-openssl-dev \
-    libjson0-dev \
+RUN apt-get -y install    
     iputils-ping iproute2
 RUN apt-get -y install tcpdump net-tools traceroute mtr dnsutils bind9-host 
 
 RUN apt-get -y install   hostname ethtool netcat \
-    libssl-dev    libzmq5 libstdc++6 libgcc1 
+    libssl-dev libzmq5 libstdc++6 libgcc1 
     
 ENV RTE_SDK /opt/dpdk
 ENV RTE_TARGET arm64-armv8a-linuxapp-gcc
@@ -21,7 +20,7 @@ COPY dpdk ${RTE_SDK}
 
 COPY dpdk-16.04_common_linuxapp ${RTE_SDK}/config/common_linuxapp
 WORKDIR ${RTE_SDK}
-RUN git branch v16.04
+#RUN cd ${RTE_SDK}; git branch v16.04
 RUN sed -ri 's,(IGB_UIO=).*,\1n,' config/common_linuxapp && \
     sed -ri 's,(KNI_KMOD=).*,\1n,' config/common_linuxapp && \
     make -j4 install T=${RTE_TARGET}
