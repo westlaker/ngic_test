@@ -48,6 +48,11 @@ install docker server version 13.1
  Live Restore Enabled: false
 ```
 
+
+`sudo apt-get install python-setuptools python-dev` 
+
+`sudo pip install docker-compose --force --upgrade`
+
 ```shell
 Docker-compose version 1.20.1, build 5d8c71b
 docker-py version: 3.2.1
@@ -55,10 +60,6 @@ CPython version: 2.7.12
 OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
 st version of docker-compose supported is 3.1
 ```
-
-sudo apt-get install python-setuptools python-dev 
-sudo pip install docker-compose --force --upgrade
---
 
 
 
