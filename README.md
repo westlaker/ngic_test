@@ -2,54 +2,53 @@ ARM64
 =====
 install docker >sudo apt-get install docker.io
 install docker server version 13.1
-Containers: 26
+ Containers: 26
  Running: 1
  Paused: 0
  Stopped: 25
-Images: 308
-Server Version: 1.13.1
-Storage Driver: overlay2
- Backing Filesystem: extfs
- Supports d_type: true
- Native Overlay Diff: true
-Logging Driver: json-file
-Cgroup Driver: cgroupfs
-Plugins: 
- Volume: local
- Network: bridge host macvlan null overlay
-Swarm: inactive
-Runtimes: runc
-Default Runtime: runc
-Init Binary: docker-init
-containerd version:  (expected: aa8187dbd3b7ad67d8e5e3a15115d3eef43a7ed1)
-runc version: N/A (expected: 9df8b306d01f59d3a8029be411de015b7304dd8f)
-init version: N/A (expected: 949e6facb77383876aeff8a6944dde66b3089574)
-Security Options:
- seccomp
-  Profile: default
-Kernel Version: 4.14.0-dirty
-Operating System: Ubuntu 16.04.3 LTS
-OSType: linux
-Architecture: aarch64
-CPUs: 4
-Total Memory: 15.65 GiB
-Name: localhost.localdomain
-ID: 4EWW:GPA7:BIZB:DLXJ:LW27:4F5R:F5MR:7ROJ:VPDU:6L2J:TOBI:KDL5
-Docker Root Dir: /var/lib/docker
-Debug Mode (client): false
-Debug Mode (server): false
-Registry: https://index.docker.io/v1/
-Experimental: false
-Insecure Registries:
- 127.0.0.0/8
-Live Restore Enabled: false
+ Images: 308
+ Server Version: 1.13.1
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Native Overlay Diff: true
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Plugins: 
+  Volume: local
+  Network: bridge host macvlan null overlay
+ Swarm: inactive
+ Runtimes: runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version:  (expected: aa8187dbd3b7ad67d8e5e3a15115d3eef43a7ed1)
+ runc version: N/A (expected: 9df8b306d01f59d3a8029be411de015b7304dd8f)
+ init version: N/A (expected: 949e6facb77383876aeff8a6944dde66b3089574)
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 4.14.0-dirty
+ Operating System: Ubuntu 16.04.3 LTS
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 4
+ Total Memory: 15.65 GiB
+ Name: localhost.localdomain
+ ID: 4EWW:GPA7:BIZB:DLXJ:LW27:4F5R:F5MR:7ROJ:VPDU:6L2J:TOBI:KDL5
+ Docker Root Dir: /var/lib/docker
+ Debug Mode (client): false
+ Debug Mode (server): false
+ Registry: https://index.docker.io/v1/
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
 
-Highedocker-compose version 1.20.1, build 5d8c71b
+Docker-compose version 1.20.1, build 5d8c71b
 docker-py version: 3.2.1
 CPython version: 2.7.12
 OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
 st version of docker-compose supported is 3.1
-tested with
 
 sudo apt-get install python-setuptools python-dev 
 sudo pip install docker-compose --force --upgrade
