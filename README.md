@@ -1,6 +1,8 @@
 ARM64
 =====
-install docker >sudo apt-get install docker.io
+install docker 
+
+`sudo apt-get install docker.io`
 
 install docker server version 13.1
 
@@ -47,11 +49,13 @@ install docker server version 13.1
   127.0.0.0/8
  Live Restore Enabled: false
 ```
-
+Install docker-compose
 
 `sudo apt-get install python-setuptools python-dev` 
 
 `sudo pip install docker-compose --force --upgrade`
+
+`sudo docker-compose version`
 
 ```shell
 Docker-compose version 1.20.1, build 5d8c71b
