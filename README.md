@@ -78,27 +78,19 @@ Install [docker](https://docs.docker.com/engine/installation/) (at least version
 
 After Docker is setup, clone the source code in this repo:
 
-`git clone https://github.com/ngiccorddemo/cordbuild2017.git`
+`git clone https://github.com/adivjoseph/ngic_test.git`
 
-Then open 2 additional terminals and change directory to the demo folder in all of them:
+Then open 2 additional terminals and change directory from the demo folder in all of them:
 
-`cd cordbuild2017`
+`cd ngic_arm64`
 
-__NOTE:__ Do this only if you are running this demo in __virtualbox__ directly or indirectly:
-
-```shell
-sed -i 's/latest/vbox/g' .env
 ```
 
 
 Pull the images
 ===============
 
-Use Docker-Compose to pull the images:
-
-`docker-compose pull cp dp traffic`
-
-(Alternatively, if you wish to build the Docker images yourself, see the [readme](dockerfiles/README.md) inside the dockerfiles folder.)
+Arm64 images must be in Docker cache, see README.md in dockerfiles directory on how to build them
 
 
 Starting the Data Plane
