@@ -4,7 +4,8 @@ install docker >sudo apt-get install docker.io
 
 install docker server version 13.1
 
-` Containers: 26
+```shell
+ Containers: 26
  Running: 1
  Paused: 0
  Stopped: 25
@@ -45,7 +46,7 @@ install docker server version 13.1
  Insecure Registries:
   127.0.0.0/8
  Live Restore Enabled: false
- '
+```
 
 `Docker-compose version 1.20.1, build 5d8c71b
 docker-py version: 3.2.1
