@@ -79,18 +79,17 @@ Install [docker](https://docs.docker.com/engine/installation/) (at least version
 After Docker is setup, clone the source code in this repo:
 
 `git clone https://github.com/adivjoseph/ngic_test.git`
+`git submodule update --recursive --remote`
+
+Build Docker images
+
+Arm64 images must be in Docker cache, see README.md in dockerfiles directory on how to build them
 
 Then open 2 additional terminals and change directory from the demo folder in all of them:
 
 `cd ngic_arm64`
 
 ```
-
-
-Pull the images
-===============
-
-Arm64 images must be in Docker cache, see README.md in dockerfiles directory on how to build them
 
 
 Starting the Data Plane
