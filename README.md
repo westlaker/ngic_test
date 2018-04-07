@@ -82,6 +82,8 @@ After Docker is setup, clone the source code in this repo:
 
 `git submodule update --recursive --remote`
 
+[ARM64 ONLY](https://github.com/adivjoseph/ngic_test/dockerfiles#ARM64-ONLY)
+
 Build Docker images
 ===================
 
