@@ -91,7 +91,7 @@ Arm64 images must be in Docker cache, see README.md in dockerfiles directory on 
 
 Then open 2 additional terminals and change directory from the demo folder in all of them:
 
-`cd ngic_arm64`
+`cd ngic_test`
 
 ```
 
