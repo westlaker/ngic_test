@@ -85,7 +85,7 @@ After Docker is setup, clone the source code in this repo:
 
 `git submodule update --recursive --remote`
 
-[ARM64 ONLY](https://github.com/adivjoseph/ngic_test/blob/master/dockerfiles/README.md#ARM64-ONLY)
+
 
 Build Docker images
 ===================
@@ -95,6 +95,8 @@ Arm64 images must be in Docker cache, see README.md in dockerfiles directory on 
 Then open 2 additional terminals and change directory from the demo folder in all of them:
 
 `cd ngic_test`
+
+Link to build instructions [ARM64 ONLY](https://github.com/adivjoseph/ngic_test/blob/master/dockerfiles/README.md#ARM64-ONLY)
 
 ```
 
