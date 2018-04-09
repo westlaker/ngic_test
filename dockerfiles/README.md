@@ -5,7 +5,7 @@ Steps to build from source (NO pre-built docker images):
 
 Starting in the `ngic_test` directory, run the following command to clone the NGIC code at a specific commit and also pull the required DPDK submodule:
 
-`git submodule update --init --recursive`
+`git submodule update  --recursive --remote`
 
 Copy the Dockerfiles from demo repo to ngic directory:
 
@@ -20,6 +20,13 @@ Also for this demo, we are disabling the SDN Controller support.
 Make sure it is not enabled.
 
 `sed -i 's/CFLAGS/#CFLAGS/g' ngic_arm64/config/ng-core_cfg.mk`
+
+Make sure that the older version of DPDK required by NGIC is used:
+
+`cd ngic_arm64/dpdk
+git checkout v16.04
+git branch
+cd ../..`
 
 Now you can use the docker-compose to build the container images:
 
