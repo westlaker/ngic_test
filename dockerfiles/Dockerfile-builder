@@ -6,8 +6,7 @@ RUN apt-get update && apt-get -y install build-essential wget \
     libpcap0.8-dev libjson0-dev git
 
 
-RUN apt-get -y install    
-    iputils-ping iproute2
+RUN apt-get -y install  iputils-ping iproute2
 RUN apt-get -y install tcpdump net-tools traceroute mtr dnsutils bind9-host 
 
 RUN apt-get -y install   hostname ethtool netcat \
