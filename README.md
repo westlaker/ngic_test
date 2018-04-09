@@ -98,11 +98,13 @@ Then open 2 additional terminals and change directory from the demo folder in al
 
 Link to build instructions [ARM64 ONLY](https://github.com/adivjoseph/ngic_test/blob/master/dockerfiles/README.md#ARM64-ONLY)
 
-```
 
 
-Starting the Data Plane
+
+Starting the NGIC Demo
 =======================
+
+```
 
 In terminal #1: Bring up DP
 
