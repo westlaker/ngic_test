@@ -24,8 +24,11 @@ Make sure it is not enabled.
 Make sure that the older version of DPDK required by NGIC is used:
 
 `cd ngic_arm64/dpdk
+
 git checkout v16.04
+
 git branch
+
 cd ../..`
 
 Now you can use the docker-compose to build the container images:
