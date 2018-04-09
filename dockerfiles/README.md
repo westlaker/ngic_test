@@ -30,7 +30,8 @@ git checkout v16.04
 
 git branch
 
-cd ../..```
+cd ../..
+```
 
 Now you can use the docker-compose to build the container images:
 
