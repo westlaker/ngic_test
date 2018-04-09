@@ -38,4 +38,4 @@ Now you can use the docker-compose to build the container images:
 `docker-compose build`
 
 
-Once all of the images have built, go back and follow the instructions on the main readme starting at [Starting the Data Plane](https://github.com/adivjoseph/ngic_test#starting-ngic-demo)
+Once all of the images have built, go back and follow the instructions on the main readme starting at [Starting the Data Plane](https://github.com/adivjoseph/ngic_test#starting-the-ngic-demo)
