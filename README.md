@@ -4,7 +4,7 @@ install docker
 
 `sudo apt-get install docker.io`
 
-install docker server version 13.1
+install docker server version 1.3.1
 
 ```shell
  Containers: 26
@@ -77,7 +77,7 @@ Prerequisites
 
 This demo requires a Linux box with at least 4GB of free RAM.
 
-Install [docker](https://docs.docker.com/engine/installation/) (at least version 1.13 to run only, 17.06-ce to build images locally) and [docker-compose](https://github.com/docker/compose/releases).
+Install [docker](https://docs.docker.com/engine/installation/) (at least version 1.13 to run only) and [docker-compose](https://github.com/docker/compose/releases).
 
 After Docker is setup, clone the source code in this repo:
 
