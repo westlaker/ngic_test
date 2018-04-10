@@ -4,7 +4,7 @@ install docker
 
 `sudo apt-get install docker.io`
 
-install docker server version 1.3.1
+install docker server version 1.13.1
 
 ```shell
  Containers: 26
@@ -82,6 +82,12 @@ Install [docker](https://docs.docker.com/engine/installation/) (at least version
 After Docker is setup, clone the source code in this repo:
 
 `git clone https://github.com/adivjoseph/ngic_test.git`
+
+For first time, do:
+
+`git submodule update --init --recursive --remote`
+
+For subsequent update, do:
 
 `git submodule update --recursive --remote`
 
